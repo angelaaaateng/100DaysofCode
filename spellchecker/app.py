@@ -2,6 +2,7 @@ import streamlit as st
 from textblob import Word
 from textblob import TextBlob
 import re
+from spellchecker import SpellChecker
 
 st.title("100 Days of Natural Language Processing")
 
@@ -47,3 +48,12 @@ words = [word.lower() for word in words_in_sentence]
 words = [re.sub(r'[^A-Za-z0-9]+', '', word) for word in words]
 for word in words: 
     st.write(word_spellchecker(word))
+
+st.header("Spellcheck using Levenshtein Distance")
+spell = SpellChecker()
+misspelled = spell.unknown(words)
+for word in misspelled:
+    # Get the one `most likely` answer
+    st.write(spell.correction(word))
+    # Get a list of `likely` options
+    st.write(spell.candidates(word))
