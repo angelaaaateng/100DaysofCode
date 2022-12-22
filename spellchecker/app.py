@@ -12,7 +12,8 @@ nltk.download('words')
 from nltk.corpus import words
 
 st.title("100 Days of Natural Language Processing")
-
+st.header("Creating a SpellCheck app in Python")
+st.write("Accompanying documentation <a href='https://www.notion.so/angelateng/Day-1-Spellchecker-e8fb14f271494ddbb83fd5c42022b856'> here</a>")
 st.header("Spellcheck using TextBlob")
 
 # spellcheck a single word
