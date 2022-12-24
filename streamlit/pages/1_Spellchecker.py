@@ -21,9 +21,13 @@ Streamlit. We're generating a bunch of random numbers in a loop for around
 5 seconds. Enjoy!"""
 )
 
+# progress_bar = st.sidebar.progress(0)
+# status_text = st.sidebar.empty()
+
+# TO DO: PUT A LOADING BAR
 # st.title("100 Days of Natural Language Processing")
 # st.header("Creating a SpellCheck app in Python")
-st.write("Accompanying documentation <a href='https://www.notion.so/angelateng/Day-1-Spellchecker-e8fb14f271494ddbb83fd5c42022b856'> here</a>")
+st.write("Accompanying documentation [here]('https://www.notion.so/angelateng/Day-1-Spellchecker-e8fb14f271494ddbb83fd5c42022b856')")
 st.header("Spellcheck using TextBlob")
 
 # spellcheck a single word
