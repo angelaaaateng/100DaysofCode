@@ -11,18 +11,10 @@ st.sidebar.success("Select a project above.")
 
 st.markdown(
     """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-"""
+    Embarking on a journey to code and learn for 100 days! \n
+    Excited to share what I learn with you along the way. \n
+    Check out a detailed log of my projects [here]('https://angelateng.notion.site/100-Days-of-Code-2b39bb18ff214985aa2c4495bd81e17b').
+    And check out the live app [here]('https://angelaaaateng-100daysofcode-streamlithello-wpa4nm.streamlit.app/'). 
+    I also post daily TikToks to document my journey. :) Follow my Tiktok [here]('https://www.tiktok.com/@angelaworkout')
+   """
 )
