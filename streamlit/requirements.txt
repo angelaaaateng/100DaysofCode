@@ -53,7 +53,6 @@ libclang==14.0.6
 Markdown==3.4.1
 matplotlib==3.6.2
 miniful==0.0.6
-mkl-fft
 mkl-service==2.4.0
 murmurhash==1.0.9
 networkx==2.8.8
