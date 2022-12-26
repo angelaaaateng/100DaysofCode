@@ -9,10 +9,10 @@ from transformers import pipeline
 
 print("**Successfully imported diffusers library...")
 
-st.set_page_config(page_title="Image Generation", page_icon="⭐")
+st.set_page_config(page_title="Image Generation", page_icon="❗")
 
 st.markdown("# Image Generation with Stable Diffusion")
-st.sidebar.header("⭐ Image Generation")
+st.sidebar.header("❗ Image Generation - in progress")
 
 st.markdown("This page is in progress... stay tuned!")
 # # st.write("We're using a 🤗 model fine-tuned on the English version of the standard CoNLL-2003 Named Entity Recognition dataset.")
