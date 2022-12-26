@@ -21,10 +21,10 @@ import heapq
 
 print("**Successfully imported spacy library...")
 
-st.set_page_config(page_title="Text Summarization", page_icon="⭐")
+st.set_page_config(page_title="Text Summarization", page_icon="🌕 ")
 
 st.markdown("# Text Summarization with SpaCy and Gensim")
-st.sidebar.header("⭐ Text Summarization")
+st.sidebar.header("🌕 Text Summarization")
 st.write("We implement the TextRank algorithm from PytextRank and SpaCy, originally published in a paper by Mihalcea, 2004.")
 
 # load a spaCy model, depending on language, scale, etc.
