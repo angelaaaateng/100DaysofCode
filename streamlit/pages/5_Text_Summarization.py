@@ -9,6 +9,12 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('vader_lexicon')
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from nltk.text import Text  
+from nltk.corpus import PlaintextCorpusReader
+
 
 import re
 import heapq 
@@ -70,7 +76,7 @@ for text in clean_texts:
     stemmed = porter.stem(text.lower())
     stemmed_text.append(stemmed)
 # word count 
-
+stopwords = set(stopwords.words("english"))
 stopwords = nltk.corpus.stopwords.words('english')
 word_frequencies = {}
 for sentence in stemmed_text: 
