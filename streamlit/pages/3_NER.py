@@ -25,20 +25,22 @@ From https://edition.cnn.com/2022/12/25/europe/russia-yamal-europe-gas-pipeline/
 ner_results = nlp(long_text)
 # st.write(ner_results['entity'])
 
-st.write("People Mentioned:")
-# TO DO: write cleaner code here
+persons = []
+locations = []
+organizations = [] 
+miscs = [] 
 for result in ner_results: 
   if 'PER' in str(result['entity']):
-    st.write(result['word'])
+    persons.append(result['word'])
+  elif 'LOC' in str(result['entity']): 
+    locations.append(result['word'])
+  elif 'ORG' in str(result['entity']): 
+    organizations.append(result['word'])
+  else: 
+    miscs.append(result['word'])
 
-st.write("Locations Mentioned:")
-# TO DO: write cleaner code here
-for result in ner_results: 
-  if 'LOC' in str(result['entity']):
-    st.write(result['word'])
-
-st.write("Organizations Mentioned:")
-# TO DO: write cleaner code here
-for result in ner_results: 
-  if 'ORG' in str(result['entity']):
-    st.write(result['word'])
+# TO DO: make output prettier
+st.write("People mentioned: ", str(persons))
+st.write("Locations mentioned: ", str(locations))
+st.write("Organizations mentioned: ", str(organizations))
+st.write("Other entities mentioned: ", str(miscs))
